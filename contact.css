@@ -1,0 +1,149 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Saira", sans-serif;
+}
+
+@keyframes load {
+
+    from { opacity: 0%;
+        transform: translateY(100%);}
+    to {opacity: 100%;
+        transform: translateY(0%);}
+}
+
+body {
+
+    font-family: 'Outfit';
+    background: #1c1212;
+    background: linear-gradient(90deg, rgba(28, 18, 18, 1) 0%, rgba(58, 107, 78, 1) 50%, rgba(143, 137, 84, 1) 100%);
+    color: aliceblue;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.navs {
+
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.nav-container {
+
+    width: 50%;
+    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.nav-container a {
+
+    width: 25%;
+    height: 100%;
+    font-size: 24px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    text-decoration: none;
+    border: none;
+    transition: border 100ms;
+}
+
+.nav-container a:hover {
+
+    border-bottom: 2px solid rgb(21, 255, 0);
+}
+
+.head {
+
+    position: relative;
+    left: 25%;
+    margin-top: 3%;
+}
+
+.container {
+
+    height: 55vh;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.form {
+
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInput {
+
+    width: 400px;
+    height: 50px;
+    padding: 25px;
+    outline: none;
+    border: none;
+    font-weight: 500s;
+    border-radius: 50px;
+}
+
+.container textarea {
+
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contactInput:focus {
+
+    border: 2px solid #39b8b2;
+
+}
+
+.container button {
+
+    display: flex;
+    padding: 15px 25px;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+    color: aliceblue;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg,rgba(75, 72, 140, 1) 0%, rgba(44, 44, 125, 1) 35%, rgba(43, 113, 128, 1) 100%);
+    cursor: pointer;
+    width: 30%;
+}
+
+.options {
+
+    position: relative;
+    left: 40%;
+    margin-top: 15px;
+}
+
+.other-links {
+
+    width: 100%;
+    margin-top: 25px;
+    padding: 20px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+.other-links a{
+    position: relative;
+    font-size: 36px;
+    left: 50px;
+    color: aliceblue;
+    margin: 0px 10px;
+}
